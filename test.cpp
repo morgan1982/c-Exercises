@@ -19,10 +19,13 @@ inline void keep_window_open()
 
 int main(void) {
 
+    int word_counter = 0;
     string pre = " ";
     string current;
 
     while(cin >> current) {
+
+        ++word_counter;
 
         if (pre == current) {
             cout << "repeated " << current << endl;
@@ -34,7 +37,7 @@ int main(void) {
             break;
         }
     }
-    cout << current << endl;
+    cout << "num of words " << word_counter << endl;
 
 
 

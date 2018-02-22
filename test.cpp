@@ -23,7 +23,7 @@ int main(void) {
     string pre = " ";
     string current;
 
-    while(cin >> current) {
+    while(cin >> current) { // means while cin is not empty
 
         ++word_counter;
 

@@ -19,25 +19,11 @@ inline void keep_window_open()
 
 int main(void) {
 
-    int word_counter = 0;
-    string pre = " ";
-    string current;
+    char x = 'x';
+    int y = x; // convertion ascii 
+    
 
-    while(cin >> current) { // means while cin is not empty
-
-        ++word_counter;
-
-        if (pre == current) {
-            cout << "repeated " << current << endl;
-        }
-        pre = current;
-
-
-        if (current == "konos") {
-            break;
-        }
-    }
-    cout << "num of words " << word_counter << endl;
+    cout << y << endl; 
 
 
 

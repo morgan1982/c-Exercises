@@ -48,6 +48,25 @@ int main(void) {
     else if (friend_sex == 'f') {
         cout << "tell her i called\n";
     }
+    int age = -1;
+    cout << "enter the age of the recipient: \n";
+    cin >> age;
+    if ((age <= 0) | ( age >= 101 )) {
+        cout << "you re kidding..\n"; 
+    }
+    if (age < 12) {
+        ++age;
+        cout << "next year you will be: " << age << endl;
+    }
+    if (age == 17) {
+        cout << "next year you will be able to vote" << endl;
+    }
+    if (age > 70) {
+        cout << "i hope you are enjoying retirement" << endl;
+    }
+    cout << "Yours sincerely\n" << endl << endl;
+    string my_name = "froutopoios";
+    cout << my_name << endl; 
 
 
 
